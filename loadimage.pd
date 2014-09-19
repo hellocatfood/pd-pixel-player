@@ -1,4 +1,4 @@
-#N canvas 916 68 931 998 10;
+#N canvas 907 92 931 998 10;
 #X obj 350 253 cnv 15 200 100 empty empty empty 20 12 0 14 -204786
 -66577 0;
 #X obj 32 415 pix_data;
@@ -259,7 +259,6 @@
 #X connect 8 0 7 0;
 #X connect 9 0 1 0;
 #X connect 10 0 11 0;
-#X connect 10 0 60 0;
 #X connect 11 0 16 0;
 #X connect 12 0 10 0;
 #X connect 16 0 3 0;
@@ -301,6 +300,7 @@
 #X connect 65 0 66 0;
 #X connect 66 0 44 1;
 #X connect 67 0 11 0;
+#X connect 67 0 60 0;
 #X connect 68 0 28 0;
 #X connect 69 0 25 0;
 #X connect 70 0 26 0;
