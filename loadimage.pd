@@ -1,58 +1,58 @@
-#N canvas 907 92 931 998 10;
-#X obj 350 253 cnv 15 200 100 empty empty empty 20 12 0 14 -204786
+#N canvas 895 82 931 998 10;
+#X obj 350 250 cnv 15 200 100 empty empty empty 20 12 0 14 -204786
 -66577 0;
-#X obj 32 415 pix_data;
-#X obj 47 215 pix_info . . .;
-#X obj 47 195 pix_image;
-#X obj 47 5 gemhead;
-#X obj 54 445 unpack f f f;
-#X floatatom 62 345 5 0 0 0 - - -;
-#X floatatom 77 385 5 0 0 0 - - -;
-#X obj 77 365 r y;
-#X obj 32 295 r bang;
-#X obj 67 85 openpanel;
-#X msg 67 105 open \$1;
-#X obj 357 258 bng 30 250 50 0 empty empty empty 17 7 0 10 -258113
+#X obj 32 412 pix_data;
+#X obj 47 212 pix_info . . .;
+#X obj 47 192 pix_image;
+#X obj 47 2 gemhead;
+#X obj 54 442 unpack f f f;
+#X floatatom 62 342 5 0 0 0 - - -;
+#X floatatom 77 382 5 0 0 0 - - -;
+#X obj 77 362 r y;
+#X obj 32 292 r bang;
+#X obj 67 82 openpanel;
+#X msg 67 102 open \$1;
+#X obj 357 255 bng 30 250 50 0 empty empty empty 17 7 0 10 -258113
 -1 -1;
-#X text 96 234 width;
-#X text 108 254 height;
-#X text 395 263 open image;
-#X obj 67 127 t a b;
-#X floatatom 357 328 6 0 0 0 - - -;
-#X floatatom 447 328 6 0 0 0 - - -;
-#X text 402 327 width;
-#X text 492 327 height;
-#X obj 94 147 s initbang;
-#X obj 350 354 cnv 15 200 220 empty empty empty 20 12 0 14 -261682
+#X text 96 231 width;
+#X text 108 251 height;
+#X text 395 260 open image;
+#X obj 67 124 t a b;
+#X floatatom 357 325 6 0 0 0 - - -;
+#X floatatom 447 325 6 0 0 0 - - -;
+#X text 402 324 width;
+#X text 492 324 height;
+#X obj 94 144 s initbang;
+#X obj 350 351 cnv 15 200 220 empty empty empty 20 12 0 14 -261682
 -66577 0;
-#X obj 30 726 * 100;
-#X obj 30 786 +~;
-#X obj 358 431 knob 32 32 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
--258113 -1 0 1;
-#X obj 358 481 knob 32 32 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
--4034 -1 0 1;
-#X obj 358 531 knob 32 32 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
--4160 -1 0 1;
-#X obj 358 362 knob 50 50 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
+#X obj 30 723 * 100;
+#X obj 30 783 +~;
+#X obj 358 428 knob 32 32 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
+-258113 -1 1265 1;
+#X obj 358 478 knob 32 32 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
+-4034 -1 1265 1;
+#X obj 358 528 knob 32 32 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
+-4160 -1 1265 1;
+#X obj 358 359 knob 50 50 0 2000 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 2000 1;
+#X text 419 370 scale audio;
+#X obj 29 807 +~;
+#X text 397 423 red;
+#X text 397 473 green;
+#X text 397 523 blue;
+#X obj 62 322 r x;
+#X obj 517 428 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -260097
 -1 -1 0 1;
-#X text 419 373 scale audio;
-#X obj 29 810 +~;
-#X text 397 426 red;
-#X text 397 476 green;
-#X text 397 526 blue;
-#X obj 62 325 r x;
-#X obj 517 431 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -260097
--1 -1 0 1;
-#X obj 54 467 s r-\$0;
-#X obj 88 487 s g-\$0;
-#X obj 122 507 s b-\$0;
-#X obj 30 706 r r-\$0;
-#X obj 180 706 r g-\$0;
-#X obj 330 706 r b-\$0;
-#X obj 58 235 s w;
-#X obj 70 255 s h;
-#X obj 29 870 *~ 0.1;
-#X obj 29 892 outlet~;
+#X obj 54 464 s r-\$0;
+#X obj 88 484 s g-\$0;
+#X obj 122 504 s b-\$0;
+#X obj 30 703 r r-\$0;
+#X obj 180 703 r g-\$0;
+#X obj 330 703 r b-\$0;
+#X obj 58 232 s w;
+#X obj 70 252 s h;
+#X obj 29 867 *~ 0.1;
+#X obj 29 889 outlet~;
 #N canvas 1085 574 450 300 wsel 0;
 #X obj 120 120 cnv 15 70 35 empty empty empty 20 12 0 14 -261234 -66577
 0;
@@ -81,7 +81,7 @@
 #X connect 9 3 10 0;
 #X connect 10 0 1 0;
 #X coords 0 -1 1 1 70 35 1 120 120;
-#X restore 438 431 pd wsel;
+#X restore 438 428 pd wsel;
 #N canvas 841 429 450 300 box_color 0;
 #X obj 45 8 inlet;
 #X obj 185 142 t b f;
@@ -136,50 +136,50 @@
 #X connect 22 0 12 0;
 #X connect 22 0 13 0;
 #X connect 24 0 14 0;
-#X restore 648 591 pd box_color;
-#X obj 648 500 r r-\$0;
-#X obj 682 520 r g-\$0;
-#X obj 717 540 r b-\$0;
-#X obj 180 726 * 100;
-#X obj 330 726 * 100;
-#X obj 30 746 selectWaveform;
-#X obj 350 575 cnv 15 200 100 empty \$0/cnv/r empty 20 12 0 14 -148443
+#X restore 648 588 pd box_color;
+#X obj 648 497 r r-\$0;
+#X obj 682 517 r g-\$0;
+#X obj 717 537 r b-\$0;
+#X obj 180 723 * 100;
+#X obj 330 723 * 100;
+#X obj 30 743 selectWaveform;
+#X obj 350 572 cnv 15 200 100 empty \$0/cnv/r empty 20 12 0 14 -148443
 -262144 0;
-#X obj 693 701 makesymbol %s/cnv/r;
-#X obj 693 671 \$0;
-#X obj 648 651 t f b;
-#X obj 648 731 pack f s;
-#X msg 648 761 \; \$2 color \$1;
-#X obj 207 85 stripdir;
-#X symbolatom 357 298 26 0 0 0 - - -;
-#X obj 54 527 outlet red;
-#X obj 88 547 outlet green;
-#X obj 122 567 outlet blue;
-#X msg 61 820 \$1 10;
-#X obj 62 842 line;
-#X obj 157 5 inlet openimage;
-#X obj 287 5 inlet scaleaudio;
-#X obj 297 25 inlet scalered;
-#X obj 307 45 inlet scalegreen;
-#X obj 317 65 inlet scaleblue;
-#X obj 437 25 inlet redwave;
-#X obj 447 45 inlet greenwave;
-#X obj 457 65 inlet bluewave;
-#X obj 567 25 inlet volume;
-#X obj 648 613 spigot;
-#X obj 507 588 tgl 30 0 empty empty empty 15 7 0 12 -258113 -262144
+#X obj 693 698 makesymbol %s/cnv/r;
+#X obj 693 668 \$0;
+#X obj 648 648 t f b;
+#X obj 648 728 pack f s;
+#X msg 648 758 \; \$2 color \$1;
+#X obj 207 82 stripdir;
+#X symbolatom 357 295 26 0 0 0 - - -;
+#X obj 54 524 outlet red;
+#X obj 88 544 outlet green;
+#X obj 122 564 outlet blue;
+#X msg 61 817 \$1 10;
+#X obj 62 839 line;
+#X obj 157 2 inlet openimage;
+#X obj 287 2 inlet scaleaudio;
+#X obj 297 22 inlet scalered;
+#X obj 307 42 inlet scalegreen;
+#X obj 317 62 inlet scaleblue;
+#X obj 437 22 inlet redwave;
+#X obj 447 42 inlet greenwave;
+#X obj 457 62 inlet bluewave;
+#X obj 567 22 inlet volume;
+#X obj 648 610 spigot;
+#X obj 507 585 tgl 30 0 empty empty empty 15 7 0 12 -258113 -262144
 -262144 0 1;
-#X obj 578 500 loadbang;
-#X text 457 596 display;
-#X obj 29 840 /~ 3;
-#X obj 578 320 loadbang;
-#X msg 578 342 0;
-#X obj 180 746 selectWaveform;
-#X obj 330 746 selectWaveform;
-#X floatatom 398 450 5 0 0 0 - - -;
-#X floatatom 398 500 5 0 0 0 - - -;
-#X floatatom 398 550 5 0 0 0 - - -;
-#X floatatom 422 399 5 0 0 0 - - -;
+#X obj 578 497 loadbang;
+#X text 457 593 display;
+#X obj 29 837 /~ 3;
+#X obj 578 317 loadbang;
+#X msg 578 339 0;
+#X obj 180 743 selectWaveform;
+#X obj 330 743 selectWaveform;
+#X floatatom 398 447 5 0 0 0 - - -;
+#X floatatom 398 497 5 0 0 0 - - -;
+#X floatatom 398 547 5 0 0 0 - - -;
+#X floatatom 422 396 5 0 0 0 - - -;
 #N canvas 1085 574 450 300 wsel 0;
 #X obj 120 120 cnv 15 70 35 empty empty empty 20 12 0 14 -261234 -66577
 0;
@@ -208,7 +208,7 @@
 #X connect 9 3 10 0;
 #X connect 10 0 1 0;
 #X coords 0 -1 1 1 70 35 1 120 120;
-#X restore 438 481 pd wsel;
+#X restore 438 478 pd wsel;
 #N canvas 1085 574 450 300 wsel 0;
 #X obj 120 120 cnv 15 70 35 empty empty empty 20 12 0 14 -261234 -66577
 0;
@@ -237,9 +237,9 @@
 #X connect 9 3 10 0;
 #X connect 10 0 1 0;
 #X coords 0 -1 1 1 70 35 1 120 120;
-#X restore 438 531 pd wsel;
-#X msg 578 522 0;
-#X obj 510 746 outlet alpha;
+#X restore 438 528 pd wsel;
+#X msg 578 519 0;
+#X obj 510 743 outlet alpha;
 #X connect 1 1 5 0;
 #X connect 2 0 1 1;
 #X connect 2 1 17 0;
@@ -259,6 +259,7 @@
 #X connect 8 0 7 0;
 #X connect 9 0 1 0;
 #X connect 10 0 11 0;
+#X connect 10 0 60 0;
 #X connect 11 0 16 0;
 #X connect 12 0 10 0;
 #X connect 16 0 3 0;
@@ -324,4 +325,4 @@
 #X connect 89 0 83 1;
 #X connect 90 0 84 1;
 #X connect 91 0 77 0;
-#X coords 0 -1 1 1 200 428 1 350 250;
+#X coords 0 -1 1 1 200 422 1 350 250;
